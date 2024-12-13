@@ -14,4 +14,20 @@ export const numberOfColors = (dogs: Dog[]) => {
     return uniqueColors.length;
 };
 
-export const commonColor = (d) => { };
+export const commonColor = (dogs: Dog[]) => {
+    const colorCounts: { [key: string]: number } = {};
+    let mostFrequent = "";
+    let maxCount = 0;
+
+    dogs.forEach((dog) => {
+        const color = dog.color;
+        colorCounts[color] = (colorCounts[color] || 0) + 1;
+
+        if (colorCounts[color] > maxCount) {
+            mostFrequent = color;
+            maxCount = colorCounts[color];
+        }
+    });
+
+    return mostFrequent;
+};
