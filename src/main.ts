@@ -106,7 +106,7 @@ console.log(
 );
 
 // loopa igenom alla monster och skriv ut dem med prettyPrintMonster
-prettyPrintMonster(monsters[0]);
+prettyPrintMonster(monsters);
 
 console.log(
 	`Antalet monster som har vingar är ${numberOfMonstersWithWings(monsters)}`

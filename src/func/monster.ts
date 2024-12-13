@@ -1,9 +1,8 @@
-//utöka så alla egenskaper för monstret skrivs ut
 import { Monster } from "../type";
 
-export const prettyPrintMonster = (allMonster: Monster[]) => {//export gör funktionen tillgänglig dör import i andra filer om den behövs där.
+export const prettyPrintMonster = (monster: Monster[]) => {//export gör funktionen tillgänglig dör import i andra filer om den behövs där.
 	//pettyPrintMonster-Funktionsnamnet. (allMonster: Monster[]) Funktions parameter. allMonster är en array av objekt av typen Monster.Varje objetk representerar ett monster med egenskaper som namn, ålder, antal tentakler, antal ögon och om det har vingar eller inte.
-	allMonster.forEach((u) => { //(u) parametern som representerar varje monster i arrayen under iterationen. Namn u står för "unit(enhet)".För varje iteration kommer ett nytt monsterobjekt att passeras som argument till denna funktion.
+	monster.forEach((u) => { //(u) parametern som representerar varje monster i arrayen under iterationen. Namn u står för "unit(enhet)".För varje iteration kommer ett nytt monsterobjekt att passeras som argument till denna funktion.
 		console.log(
 			`Name: ${u.name}, Age: ${u.age}, No. of tentacles: ${u.tentacles}, No. of eyes: ${u.eyes}, Has wings: ${u.hasWings}` //Template string (`${...}`): Används för att sammanfoga strängar och infoga värden från objektet u i strängen.
 		);
