@@ -1,4 +1,5 @@
 import { User } from "../type";
+
 export const averageAge = (allUsers: User[]) => {
 	let allAges = 0;
 	allUsers.forEach((u) => {
