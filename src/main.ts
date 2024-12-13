@@ -18,7 +18,7 @@ const printSum = (a: number, b: number) => {
 printSum(1, 2);
 printSum(5, 12);
 
-const persons: User[] = [
+const arr: User[] = [
 	{
 		name: "Stina",
 		hobby: ["läsa böcker"],
@@ -46,10 +46,10 @@ const persons: User[] = [
 	},
 ];
 
-console.log(`Vi har ${persons.length} stycken användare.`);
-console.log(`Medelåldern på alla användare är ${averageAge(persons)}`);
+console.log(`Vi har ${arr.length} stycken användare.`);
+console.log(`Medelåldern på alla användare är ${averageAge(arr)}`);
 console.log(
-	`Medelantalet hobbies per användare är ${averageNumberOfHobbies(persons)}`
+	`Medelantalet hobbies per användare är ${averageNumberOfHobbies(arr)}`
 );
 // skriv ut "Den personen med flest hobbies har Y stycken hobbies". Byt ut Y mot ett funktionsanrop. Skapa den funktionen.
 // skriv ut "Den äldsta personen är A och den yngsta är B". Byt ut A och B mot funktionsanrop. Ska de två funktionerna
